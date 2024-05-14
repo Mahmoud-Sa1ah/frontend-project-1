@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airport Site</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<form class="sky-form";>
+    <div class="skyformm"> hello Booking Service</div>
+    <fieldset>
+                    <span style="color:red;">
+                    </span>
+                    <div class="group">
+                        
+                        
+
+                        
+                        <div class="putt">
+                            <label class="label1" >FirstName</label>
+                                <input class="iputt" name="firstName" placeholder="First Name" type="text" required="" data-val="true" data-val-length="The field Title must be a string with a minimum length of 2 ." data-val-length-max="160" data-val-length-min="2" data-val-required="This field  is required." id="FirstName" value="" aria-required="true">
+                       
+                            
+                            <span class="valid" style="color:red;" data-valmsg-for="firstName" data-valmsg-replace="true"></span>
+                        </div>
+
+
+                        
+                        <div class="putt">
+                            <label class="label1" >MiddleName</label>
+                                <input class="iputt" name="middleName" placeholder="Middle Name"  type="text" required="" data-val="true" data-val-length="The field Title must be a string with a minimum length of 2 ." data-val-length-max="160" data-val-length-min="2" data-val-required="This field  is required." id="MiddleName" value="" aria-required="true">
+                            
+                            <span class="valid" style="color:red;" data-valmsg-for="middleName" data-valmsg-replace="true"></span>
+                        </div>
+
+
+                        
+                        <div class="putt">
+                            <label class="label1">LastName</label>
+                                <input class="iputt" name="lastName" placeholder="Last Name"  type="text" required="" data-val="true" data-val-length="The field Title must be a string with a minimum length of 2 ." data-val-length-max="160" data-val-length-min="2" data-val-required="This field  is required." id="LastName" value="" aria-required="true">
+                            
+                            
+                            <span class="valid" style="color:red;" data-valmsg-for="lastName" data-valmsg-replace="true"></span>
+                        </div>
+                    
+                 
+                     <div class="putt">
+                        <div class="mil">
+                        <label class="label1" >Email</label>
+                        <label class="label2">Phone</label>
+                    </div>
+                            <div class="mil">
+                            
+                            <div>
+                               
+                                <input name="Email" class="iputt2" id="email" placeholder="Enter your email" required="" data-val="true" data-val-required="This field  is required." class="form-control" type="email" maxlength="199" aria-required="true">
+                            </div>
+                            
+                            <span  style="color:red;" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                            
+                        
+                            
+                            <div >
+                               
+                                <input name="Phone"class="iputt2" placeholder="Phone" class="form-control" type="text" onkeypress="return isNumber(event)" onchange="return isNumber(event)" maxlength="13">
+                            </div>
+                            <span  style="color:red;" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                        
+                
+                    <br>
+                    <br>
+                 
+
+                    <div class="putt">
+                        <label>Nationality</label>
+                        <div class="mil">
+                            <div ><label class="iputt2" style="color: black;"><input type="radio" checked="" value="1" name="customerType"><i></i>Egyptian</label></div>
+                            <div ><label class="iputt2" style="color: black;"><input type="radio" value="0" name="customerType"><i></i>Non Egyptian</label></div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                 
+
+                    <div class="putt">
+                        <div class="mil">
+                            <label class="label1" >Date</label>
+                            <label class="label2">Time</label>
+                        </div>
+                        <div class="mil">
+                    <input class="iputt2" name="FlightDate" id="FlightDate" value="2024/05/14" placeholder="Flight Date"  type="text" required="" data-val="true" data-val-required="This field  is required." aria-required="true" aria-invalid="false">
+                    <input class="iputt2"  name="FlightTime" type="time" style="direction:ltr" value="12:00" id="time" placeholder="Flight Time" required="" data-val="true" data-val-required="This field  is required." aria-required="true" aria-invalid="false">
+                </div>
+                </div>
+
+                <br>
+                <br>
+             
+
+                <div class="putt">
+                    <div class="mil">
+                        <label class="label1" >FlightNumber</label>
+                        <label class="label2">Destination</label>
+                    </div>
+                    <div class="mil">
+                        <input class="iputt2" name="FlightNumber" placeholder="Flight number" type="text" required="" data-val="true" data-val-required="This field  is required." data-val-length="The field should be with a maximum length of 14." data-val-length-max="14" aria-required="true" aria-invalid="false">
+                        <select class="iputt2" name="Direction" id="Direction" required="" data-val="true" data-val-required="This field  is required." aria-required="true"  aria-invalid="false">
+                            <option selected="" value="" disabled="">Choose your direction</option>
+                            <option value="1">Arrival</option>
+                            <option value="2">Departure</option>
+                        </select>
+             </div>
+            </div>
+
+            <br>
+            <br>
+         
+            <div class="putt">
+                <div class="mil">
+                    <label class="label1" >From / To City</label>
+                    <label class="label2">Terminal</label>
+                </div>
+                <div class="mil">
+            <select  class="iputt2" name="DirectionFromCode" required="" data-val="true" data-val-required="This field  is required." aria-required="true">
+                <option selected="" value="" disabled="">City Of Departure</option>
+
+                            <option value="158"> Dublin</option>
+                            <option value="163"> Guatemala</option>
+                            <option value="159">&nbsp;Comeros</option>
+                            <option value="11">Abu Dhabi</option>
+                            <option value="137">Abu Ghardeeq</option>
+                            <option value="63">Abu Simbel</option>
+                            <option value="126">Accra / Abidjan</option>
+                            <option value="15">Alexandria</option>
+                            <option value="19">Algeria</option>
+                            <option value="2">Aswan</option>
+                            <option value="107">Aswan/Abu Simbel</option>
+                            <option value="59">Asyut</option>
+                            <option value="41">Berlin</option>
+                            <option value="156">Bern</option>
+                            <option value="80">Dar AISalaam/Harare</option>
+                            <option value="152">Delhi</option>
+                            <option value="81">Doha</option>
+                            <option value="12">Dubai</option>
+                            <option value="149">El Gouna</option>
+                            <option value="118">Juba</option>
+                            <option value="9">Kuwait</option>
+                            <option value="52">Lagos</option>
+                            <option value="30">Lisbon</option>
+                            <option value="46">London</option>
+                            <option value="14">Luxor</option>
+                            <option value="64">Luxor/ Sharm</option>
+                            <option value="45">Madrid</option>
+                            <option value="42">Malpensa</option>
+                            <option value="44">Moscow</option>
+                            <option value="164">Mozambique</option>
+                            <option value="58">Mumbai</option>
+                            <option value="4">New York</option>
+                            <option value="131">Paraguay</option>
+                            <option value="3">Paris</option>
+                            <option value="143">Port Said</option>
+                            <option value="8">Riyadh</option>
+                            <option value="33">Rome</option>
+                            <option value="70">Sabeeha</option>
+                            <option value="102">Sabha</option>
+                            <option value="175">San Botrsting</option>
+                            <option value="120">Sana'a / Aden</option>
+                            <option value="26">Sana'a</option>
+                            <option value="172">SEIYUN</option>
+                            <option value="128">Taba</option>
+                            <option value="83">Tokyo</option>
+                            <option value="20">Tunisia</option>
+                            <option value="173">Ukraine </option>
+
+            </select>
+            <select class="iputt2" name="Terminal" required="" data-val="true" data-val-required="This field  is required." aria-required="true" aria-invalid="false">
+                <option selected="" value="" disabled="">Select terminal</option>
+                        <option value="1">Terminal 1</option>
+                        <option value="2">Terminal 2</option>
+                        <option value="3">Terminal 3</option>
+                        <option value="4">Seasonal flights terminal</option>
+            </select>
+
+        </div>
+    </div>
+    <br>
+    <br>
+ 
+    <div class="putt">
+        <label>Paid Currency</label>
+        <div class="mil">
+            <div ><label class="iputt2" style="color: black;"><input type="radio" checked="" value="1" name="customerType"><i></i>Egyptian pound</label></div>
+            <div ><label class="iputt2" style="color: black;"><input type="radio" value="0" name="customerType"><i></i>USD $</label></div>
+        </div>
+    </div>
+    <br>
+   <br>
+
+    <div class="putt">
+        <div class="mil">
+            <label class="label1" >Select Service</label>
+            <label class="label2">crdit card</label>
+        </div>
+        <div class="mil">
+        <select class="iputt2" name="airport" id="vip"  aria-invalid="false" >
+            <option selected="" value="" disabled="">Select Service</option>
+                    <option >Egyptian  passenger</option>
+                    <option >Foreign  passenger</option>
+        </select>
+        <input  class="iputt2" name="crdit number" id="crdit number" type="text" placeholder="crdit number" data-val="true"  maxlength="10">
+        </div>
+    </div>
+                 
+    <button class="sumit">Submit</button>
+</div>
+                </fieldset>
+</form>
